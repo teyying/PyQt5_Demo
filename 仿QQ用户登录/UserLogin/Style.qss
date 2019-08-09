@@ -1,0 +1,10 @@
+#myWidget{
+    background: gold;
+    border-radius: 8px ;
+    border: 1px solid red; /* 顺序不能变 */
+}
+#myWidget2{
+    background: blue;
+    border-radius: 8px ;
+    border: 1px solid red; /* 顺序不能变 */
+}

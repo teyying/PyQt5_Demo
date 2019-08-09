@@ -1,0 +1,147 @@
+
+QPushButton       {padding: 0px; border-radius:5px; background:rgba(0,0,0,10%);}
+QPushButton:hover {border:2px solid #005093;}
+
+QListWidget                        {border:1px solid gray; color:rpga(0,0,0,0); font-size: 20px; outline:0px;}/*去掉下拉框虚线*/
+QListWidget::Item                  {padding-top:12px; padding-bottom:2px;}
+QListWidget::Item:hover            {background:skyblue;}
+QListWidget::item:selected         {background:lightgray; color:rpga(0,0,0,0)}             /*选中显示*/
+QListWidget::item:selected:!active {border-width:0px; background:lightgreen;}       /*不知道什么意思*/
+
+QMainWindow          {background-image: url("images/0.jpeg")}   /*主程序*/
+QFrame#frameGrid     {background-image: url("images/5.png")}    /*grid的父级容器frame*/
+QScrollArea          {background: transparent}                  /*滚动条(这个和下面透明才能显示上面的)*/
+QTextEdit#replayChat {background: transparent}                  /*聊天记录框*/
+QDockWidget          {border:1px solid lightgray;}
+QDockWidget::title   {text-align: center;background: lightgray}
+QDockWidget QWidget  {background-image: url("images/6.jpg");}
+
+/*聊天输入框, padding:字体离边框的距离(上下左右)*/
+QTextEdit#sendMsg       {background: transparent; font-family: 楷体;font-weight: bold; font-size: 22px; padding: 8 8px}
+QTextEdit#sendMsg:hover {border: 2px solid pink; border-radius: 5px;} /*边框,圆角*/
+QTextEdit#sendMsg:focus {border: 2px solid pink; border-radius: 5px;background: rgpa(192,253,123,60%)} /*加一个背景色*/
+
+/*每个聊天界面中的功能按钮*/
+QPushButton#showDock {background-image: url("images/1.png")}    /*主界面大加号(打开好友列表)*/
+QPushButton#btnFunc5 {background-image: url("images/3.png")}    /*减号(删除此好友聊天框)*/
+QPushButton#btnFunc6 {background-image: url("images/2.png")}    /*加号(打开好友列表)*/
+QPushButton#sendBtn  {background-image: url("images/7.png")}    /*发送按钮*/
+
+QLineEdit{background: transparent; font-family: 楷体;font-weight: bold; font-size: 22px; padding: 6 6px}
+QLineEdit:hover{border: 2px solid lightgreen; border-radius: 5px;}
+QLineEdit:focus{border: 2px solid lightgreen; border-radius: 5px;}
+
+#widget2 {
+        background: transparent;
+}
+
+#labUp {
+        background: transparent;
+        font-family: 雅黑;font-weight: bold; font-size: 18px;
+}
+#labDown {
+        background: transparent;
+        color: gray;
+        font-size: 15px;
+}
+
+
+
+
+
+
+QScrollBar:vertical{
+    width:12px;
+    border:1px solid rgba(0,0,0,50);
+    margin:0px,0px,0px,0px;
+    padding-top:15px;
+    padding-bottom:15px;
+}
+QScrollBar::handle:vertical{
+    width:16px;
+    background:rgba(0,0,0,25%);
+    min-height:20;
+}
+QScrollBar::handle:vertical:hover{
+    background:rgba(0,0,0,50%);
+    border:0px rgba(0,0,0,25%);
+}
+QScrollBar::sub-line:vertical{
+    height:15px;
+    border-image:url(:/Res/scroll_up.png);
+    subcontrol-position:top;
+}
+QScrollBar::sub-line:vertical:hover{
+    height:15px;
+    background:rgba(0,0,0,25%);
+    subcontrol-position:top;
+}
+QScrollBar::add-line:vertical{
+    height:15px;
+    border-image:url(:/Res/scroll_down.png);
+    subcontrol-position:bottom;
+}
+QScrollBar::add-line:vertical:hover{
+    height:15px;
+    background:rgba(0,0,0,25%);
+    subcontrol-position:bottom;
+}
+QScrollBar::add-page:vertical{
+    background:rgb(255,255,255);
+}
+QScrollBar::sub-page:vertical{
+    background:rgb(255,255,255);
+}
+QScrollBar::up-arrow:vertical{
+    border-width:0px;
+    max-height:16px;
+    min-width:17px;
+}
+QScrollBar::down-arrow:vertical{
+    border-style:outset;
+    border-width:0px;
+}
+
+QScrollBar:horizontal{
+    height:12px;
+    border:1px solid rgba(0,0,0,50);
+    margin:0px,0px,0px,0px;
+    padding-left:15px;
+    padding-right:15px;
+}
+QScrollBar::handle:horizontal{
+    height:16px;
+    background:rgba(0,0,0,25%);
+    min-width:20;
+}
+QScrollBar::handle:horizontal:hover{
+    background:rgba(0,0,0,50%);
+    border:0px rgba(0,0,0,25%);
+}
+QScrollBar::sub-line:horizontal{
+    width:15px;
+    border-image:url(:/Res/scroll_left.png);
+    subcontrol-position:left;
+}
+QScrollBar::sub-line:horizontal:hover{
+    width:15px;
+    background:rgba(0,0,0,25%);
+    subcontrol-position:left;
+}
+QScrollBar::add-line:horizontal{
+    width:15px;
+    border-image:url(:/Res/scroll_right.png);
+    subcontrol-position:right;
+}
+QScrollBar::add-line:horizontal:hover{
+    width:15px;
+    background:rgba(0,0,0,25%);
+    subcontrol-position:right;
+}
+QScrollBar::add-page:horizontal{
+    background:rgb(255,255,255);
+}
+QScrollBar::sub-page:horizontal{
+    background:rgb(255,255,255);
+}
+

@@ -1,0 +1,13 @@
+<!DOCTYPE RCC>
+<RCC>
+    <qresource prefix="/">
+        <file alias="bg1.jpg">bg1.jpg</file>
+        <file alias="bg2.jpg">bg2.jpg</file>
+        <file alias="bg3.jpg">bg3.jpg</file>
+        <file alias="bg4.jpg">bg4.jpg</file>
+        <file alias="bg5.jpg">bg5.jpg</file>
+        <file alias="bg6.png">bg6.png</file>
+        <file alias="bg7.png">bg7.png</file>
+        <file alias="bg8.png">bg8.png</file>
+    </qresource>
+</RCC>

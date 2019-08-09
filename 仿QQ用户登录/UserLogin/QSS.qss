@@ -1,0 +1,186 @@
+QWidget#Login {
+        background-color: #cde6c7;
+}
+QLabel#labUserImg {
+        border-radius:35px;
+        border-image: url("image/login/00.jpg");
+}
+QLabel#label_3 {
+        border-image: url("image/login/logo.png");
+}
+
+QPushButton#myQPushButton {
+        border-radius: 8px;
+        border: 2px solid white;
+}
+QPushButton#myQPushButton:menu-indicator {image:none;} /*不显示下拉三角图标*/
+
+QPushButton#btnMini {
+        background: transparent;
+        color:#A6A6A6;
+        font-family: 宋体;
+}
+
+QPushButton#btnSetting {border-image: url("image/login/14.png");}
+
+
+QPushButton#btnExit {
+        background: transparent;
+        color:#A6A6A6;
+        font-family: 宋体;
+        font-size:17px;
+}
+QPushButton#btnExit:hover {
+        background: #FF5439;
+        border-style:outset;
+}
+QPushButton#btnMini:hover, QPushButton#btnSetting:hover {
+        background: rgba(100, 100, 100, 50);
+        border-style:outset;
+}
+QPushButton#btnCancel {   /*#1FC7FD;*/
+        background-color: #cde6c7;
+        border-radius:3px;
+        border:1px solid #A6A6A6;
+        font-family: 宋体;
+        font-weight:400;
+        font-size:17px;
+        color:black;
+}
+QPushButton#btnCancel:hover {background-color: raba(0,0,0,10);}
+QPushButton#btnLogin,QPushButton#btnAdd {   /*#1FC7FD;*/
+        background-color: #02B8FA;
+        border-radius:3px;
+        font-family: 宋体;
+        font-weight:600;
+        font-size:17px;
+        color:#DEF7FF;
+}
+QPushButton#btnLogin:hover,QPushButton#btnAdd:hover {background-color: #1FC7FD;}
+
+QPushButton#btnSignIn,QPushButton#btnFindBack,QPushButton#btnLoginSingle{
+        background: transparent;
+        color:#A6A6A6;
+}
+QPushButton#btnSignIn:hover,QPushButton#btnFindBack:hover,QPushButton#btnLoginSingle:hover{
+        color:#838383;
+}
+QPushButton#btnQRcode {
+        background: transparent;
+        border-image: url("image/login/15.png");
+}
+QPushButton#btnQRcode:hover{
+        border-image: url("image/login/16.png");
+}
+
+QPushButton#btnAddUser {
+        background-color: white;
+        border-radius:22px;
+        font-size:40px;
+        color:#A6A6A6;
+        border-top: 1px solid qlineargradient(y0:0, y1:1,stop: 0 #02B8FA, stop: 1 white);
+        border-left: 1px solid qlineargradient(x0:0, x1:1,stop: 0 #02B8FA, stop: 1 white);
+        border-bottom: 1px solid qlineargradient(y0:0, y1:1,stop: 0 white, stop: 1 #02B8FA);
+        border-right: 1px solid qlineargradient(x0:0, x1:1,stop:  0 white, stop: 1 #02B8FA);
+}
+QPushButton#btnAddUser:hover {color: #838383;}
+QPushButton#btnAddUser:pressed {color: #02B8FA;}
+
+QPushButton#btnFrameQRcodeUpdata {border-image: url("image/login/QRcode1.png");}
+QPushButton#btnFrameQRcodeUrl {border-image: url("image/login/QRcode2.png");}
+QLabel#labFrameQRcodeErrorImg {border-image: url("image/login/QRcode3.png");}
+QPushButton#btnFrameQRcodeBack {
+        background-color: #02B8FA;
+        border-radius:3px;
+        font-family: 宋体;
+        font-weight:600;
+        font-size:17px;
+        color:#DEF7FF;
+}
+QPushButton#btnFrameQRcodeBack:hover {background-color: #1FC7FD;}
+
+QCheckBox#checkBoxAotuLogin,QCheckBox#checkBoxKeepPassword {
+        color:#A6A6A6;
+}
+
+
+QLineEdit#lEditPassword, QComboBox#comboUserId {
+    background: transparent;
+    border: 1px solid #CDE6C7;
+    border-bottom: 1px solid #A6A6A6;
+    font-family: 微软雅黑;
+    font-weight:400;
+    color:#838383;
+}
+
+QLineEdit#lEditPassword:hover,QComboBox#comboUserId:hover {
+        border-bottom: 1px solid #838383;
+}
+QLineEdit#lEditPassword:focus,QComboBox#comboUserId:focus {
+        border-bottom: 1px solid #02B8FA;
+}
+/*QLineEdit#lEditPassword:!focus,QComboBox#comboUserId:!focus {
+        border-bottom: 1px solid #02B8FA;
+        color:blank;
+        font-size:18px;
+}*/
+
+
+
+/*QComboBox右边添加分割块:宽度,线宽度,样式,颜色*/
+QComboBox:drop-down {
+        width: 32px;
+        border-left: 1px solid #CDE6C7;
+}
+/*QComboBox的箭头样式*/
+QComboBox:down-arrow {
+        border-image:url("image/login/5.png");
+}
+/*下面是下拉按钮鼠标放上去的背景图片。*/
+QComboBox::down-arrow:hover {
+        border-image: url(image/login/6.png);
+}
+QComboBox::down-arrow:on {
+        border-image: url(image/login/7.png);
+}
+/*下拉列表项:字体样式, 背景*/
+QComboBox QAbstractItemView {
+        font:20px;
+        font-family: 华文宋体;
+        font-weight:300;
+        outline:0px;             /*去掉下拉框虚线*/
+        background: transparent; /*这里设置透明背景只变成深灰色,不设置是白色*/
+}
+
+/*程序中写一个self.comboUserId.setView(QListView())就可以设置下拉列表的样式了*/
+QComboBox#comboUserId QAbstractItemView::item {
+        min-height: 40px;            /*列表高度*/
+        min-width: 60px;             /*列表宽度*/
+        border-radius:5px;
+        background-color:lightgreen; /*列表背景色*/
+        color: red;                /*字体的颜色*/
+        selection-color:red;         /*选择时显示的字体颜色*/
+}
+QComboBox#comboUserId QAbstractItemView::item:hover {
+        border: 2px solid #005093;   /*列表边框宽度,样式,颜色*/
+        background-color: #428BCA;   /*滑过当前列表项的背景色*/
+}
+
+QMenu {
+        background-color: #cde6c7;
+        border: 1px solid #A6A6A6;
+        border-radius: 5px;
+}
+
+QMenu:item {
+        padding: 2px 35px 2px 30px;
+        border: 6px solid transparent; /* reserve space for selection border */
+}
+QMenu:item:selected { /*滑过样式，这里不能用hover*/
+        background: rgba(100, 100, 100, 50);
+}
+
+QFrame#frameError {background-color: #F9F4D5;}
+QLabel#labErrorImg {border-image:url("image/login/error_info.png");}
+QPushButton#btnError {border-image:url("image/login/error_btn_normal.png");}
+QPushButton#btnError:hover {border-image:url("image/login/error_btn_hover.png");}
