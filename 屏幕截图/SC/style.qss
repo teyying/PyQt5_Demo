@@ -1,0 +1,68 @@
+
+/******************************************************** 主界面 ******/
+QDialog#MainWindow {background:transparent;}
+
+QPushButton#btnConfig {background: #6382A1;border-image: url("image/setting-normal.png");}
+QPushButton#btnConfig:hover {border-image: url("image/setting-hover.png");background: rgba(99, 130, 161, 200);}
+QPushButton#btnConfig:pressed {border-image: url("image/setting-press.png");}
+
+QPushButton#btnMini {background: #6382A1;border-image: url("image/mini-normal.png");}
+QPushButton#btnMini:hover {border-image: url("image/mini-hover.png");background: rgba(99, 130, 161, 200);}
+QPushButton#btnMini:pressed {border-image: url("image/mini-press.png");}
+
+QPushButton#btnClose {background: #6382A1;border-image: url("image/close-normal.png");}
+QPushButton#btnClose:hover {border-image: url("image/close-hover.png");background: rgba(99, 130, 161, 200);}
+QPushButton#btnClose:pressed {border-image: url("image/close-press.png");}
+
+QPushButton#btnScShot {background: #08BB70;border-image: url("image/screenshot.png");}
+QPushButton#btnScShot:hover {background: rgba(8, 187, 112, 200);}
+
+QPushButton#btnPrtSc {background: #25A9E0;border-image: url("image/printscreen.png");}
+QPushButton#btnPrtSc:hover {background: rgba(37, 169, 224, 200);}
+
+/******************************************************** 设置界面 ******/
+QDialog#Config {background:lightblue;}
+QDialog#Config QTextEdit {background:transparent;border: none;}
+
+QPushButton#btnSaveConfig {background: rgba(0, 0, 0, 20);border:none;}
+QPushButton#btnSaveConfig:hover {background: #FF8080;}
+
+QPushButton#btnCancel {background: rgba(0, 0, 0, 20);border:none;}
+QPushButton#btnCancel:hover {background: #FFE680;}
+
+
+QLineEdit{background:rgba(0,0,0,10%); border:1px; font:10pt}
+/*QLineEdit:hover{ border-image:url(:/btn_background.png); }*/
+QLineEdit:hover {background:rgba(0,0,0,20%); }
+QLineEdit:focus {background:white;border-image:none; border:1px groove lightgray; border-radius:2px}
+
+
+QListWidget {border: none; background:lightgray;color:black; outline:0px;}
+QListWidget::Item {padding-top:3px; padding-bottom:3px;} /*调整每一项的高度*/
+QListWidget::Item:hover {background:rgba(0,0,0,20%); }
+QListWidget::item:selected {background:skyblue;}
+
+/******************************************************** 切片截图界面 ******/
+QWidget#wGlobal {background:rgba(0,0,0,100);}
+QWidget#wFunc {background:white;border: 1px solid gray;border-radius:5px;}
+QPushButton#btnBrush {border-image: url("image/btnBrush.png");}
+QPushButton#btnSaveAs {border-image: url("image/btnSaveAs.png");}
+QPushButton#btnNo {border-image: url("image/btnNo.png");}
+QPushButton#btnOk {border-image: url("image/btnOk.png");}
+
+QPushButton#btnBrush:hover, QPushButton#btnSaveAs:hover, QPushButton#btnNo:hover, QPushButton#btnOk:hover {
+        background:rgba(0,0,0,50%);
+        border: 3px solid red; /*这里设置border没效果，不知为什么*/
+}
+
+QWidget#wInfo {border: 1px solid black;border-bottom-left-radius:0.3em;border-bottom-right-radius:0.3em;}
+QWidget#wInfoZoomIn {background:transparent;border: 2px solid white;}
+QWidget#wInfoZoomIn QLabel#labColumn, QLabel#labRow {background:#1E90FF;}
+QTextEdit#textEdInfoRgb {
+        background:rgba(0,0,0,220);
+        color:white;
+        border: null;
+        border-bottom-left-radius:0.3em; /*这里必须让QWidget#wInfo也设置，不然没有左下角圆角的效果了*/
+        border-bottom-right-radius:0.3em;
+        }
+

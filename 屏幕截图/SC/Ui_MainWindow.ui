@@ -1,0 +1,235 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QDialog" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>94</width>
+    <height>60</height>
+   </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>90</width>
+    <height>60</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>94</width>
+    <height>60</height>
+   </size>
+  </property>
+  <property name="mouseTracking">
+   <bool>true</bool>
+  </property>
+  <property name="windowTitle">
+   <string>Dialog</string>
+  </property>
+  <widget class="QFrame" name="frame">
+   <property name="geometry">
+    <rect>
+     <x>-1</x>
+     <y>-1</y>
+     <width>90</width>
+     <height>60</height>
+    </rect>
+   </property>
+   <property name="minimumSize">
+    <size>
+     <width>90</width>
+     <height>60</height>
+    </size>
+   </property>
+   <property name="maximumSize">
+    <size>
+     <width>90</width>
+     <height>60</height>
+    </size>
+   </property>
+   <property name="mouseTracking">
+    <bool>true</bool>
+   </property>
+   <widget class="QPushButton" name="btnConfig">
+    <property name="geometry">
+     <rect>
+      <x>1</x>
+      <y>1</y>
+      <width>30</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="maximumSize">
+     <size>
+      <width>30</width>
+      <height>30</height>
+     </size>
+    </property>
+    <property name="mouseTracking">
+     <bool>true</bool>
+    </property>
+    <property name="toolTip">
+     <string>设置</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="btnMini">
+    <property name="geometry">
+     <rect>
+      <x>31</x>
+      <y>1</y>
+      <width>30</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="maximumSize">
+     <size>
+      <width>30</width>
+      <height>30</height>
+     </size>
+    </property>
+    <property name="mouseTracking">
+     <bool>true</bool>
+    </property>
+    <property name="toolTip">
+     <string>最小化</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="btnClose">
+    <property name="geometry">
+     <rect>
+      <x>61</x>
+      <y>1</y>
+      <width>30</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="maximumSize">
+     <size>
+      <width>30</width>
+      <height>30</height>
+     </size>
+    </property>
+    <property name="mouseTracking">
+     <bool>true</bool>
+    </property>
+    <property name="toolTip">
+     <string>关闭</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="btnScShot">
+    <property name="geometry">
+     <rect>
+      <x>1</x>
+      <y>31</y>
+      <width>60</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="minimumSize">
+     <size>
+      <width>60</width>
+      <height>30</height>
+     </size>
+    </property>
+    <property name="maximumSize">
+     <size>
+      <width>60</width>
+      <height>30</height>
+     </size>
+    </property>
+    <property name="mouseTracking">
+     <bool>true</bool>
+    </property>
+    <property name="toolTip">
+     <string>切片截图</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="shortcut">
+     <string>Ctrl+Shift+A</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="btnPrtSc">
+    <property name="geometry">
+     <rect>
+      <x>61</x>
+      <y>31</y>
+      <width>30</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="minimumSize">
+     <size>
+      <width>0</width>
+      <height>30</height>
+     </size>
+    </property>
+    <property name="maximumSize">
+     <size>
+      <width>30</width>
+      <height>30</height>
+     </size>
+    </property>
+    <property name="mouseTracking">
+     <bool>true</bool>
+    </property>
+    <property name="toolTip">
+     <string>全屏截图</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="shortcut">
+     <string>Ctrl+Shift+S</string>
+    </property>
+   </widget>
+  </widget>
+ </widget>
+ <resources/>
+ <connections>
+  <connection>
+   <sender>btnClose</sender>
+   <signal>clicked()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>close()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>69</x>
+     <y>13</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>46</x>
+     <y>29</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>btnMini</sender>
+   <signal>clicked()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>showMinimized()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>41</x>
+     <y>13</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>46</x>
+     <y>29</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+</ui>

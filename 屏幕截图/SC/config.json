@@ -1,0 +1,14 @@
+{
+    "self.uiConfig.ccBoxSaveDesktop.setChecked": "True",
+    "self.uiConfig.ccBoxAppHide.setChecked": "True",
+    "self.uiConfig.ccBoxAppShow.setChecked": "True",
+    "self.uiConfig.ccBoxAutoExec.setChecked": "False",
+    "self.uiConfig.ccBoxWindowOnTop.setChecked": "False",
+    "self.uiConfig.ccBoxMiniToTray.setChecked": "False",
+    "self.uiConfig.lineEdShortcutSlice.setText": "'Alt + Q'",
+    "self.uiConfig.lineEdShortcutFull.setText": "'Alt + W'",
+    "self.uiConfig.lineEdShortcutSave.setText": "'Ctrl + S'",
+    "self.uiConfig.lineEdFilePath.setText": "'C:/Users/Administrator.DESKTOP-VMCD0IN/Desktop/SC屏幕截图'",
+    "self.uiConfig.lineEdFilePath.setReadOnly": "True",
+    "self.uiConfig.actSetFilePath.setEnabled": "not True"
+}
