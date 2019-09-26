@@ -1,0 +1,34 @@
+{
+  "admin": {
+    "password": "123",
+    "nickname": "管理员"
+  },
+  "1": {
+    "password": "123",
+    "nickname": "那刻温存丶"
+  },
+  "2": {
+    "password": "123",
+    "nickname": "牵手到永远"
+  },
+  "3": {
+    "password": "123",
+    "nickname": "青川"
+  },
+  "4": {
+    "password": "123",
+    "nickname": "知足常乐"
+  },
+  "5": {
+    "password": "123",
+    "nickname": "爱你一万年"
+  },
+  "6": {
+    "password": "123",
+    "nickname": "风吹过"
+  },
+  "7": {
+    "password": "123",
+    "nickname": "奥特曼"
+  }
+}

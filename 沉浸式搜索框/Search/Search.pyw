@@ -52,7 +52,7 @@ class Search(QLineEdit):
         self.returnPressed.connect(self.on_returnPressed)  # 回车事件
 
         # 注册系统热键，并且拦截其它程序的冲突热键
-        keyboard.add_hotkey('Win+F1', self.on_hotkey, suppress=True)
+        keyboard.add_hotkey('Win+`', self.on_hotkey, suppress=True)
 
         # self.clipboard = QApplication.clipboard()
         # print(self.clipboard)

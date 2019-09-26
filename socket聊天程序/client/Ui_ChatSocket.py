@@ -1,0 +1,97 @@
+# -*- coding: utf-8 -*-
+
+# Form implementation generated from reading ui file 'Ui_ChatSocket.ui'
+#
+# Created by: PyQt5 UI code generator 5.12.3
+#
+# WARNING! All changes made in this file will be lost!
+
+
+from PyQt5 import QtCore, QtGui, QtWidgets
+
+
+class Ui_ChatSocket(object):
+    def setupUi(self, ChatSocket):
+        ChatSocket.setObjectName("ChatSocket")
+        ChatSocket.resize(600, 400)
+        ChatSocket.setWindowTitle("")
+        self.horizontalLayout_3 = QtWidgets.QHBoxLayout(ChatSocket)
+        self.horizontalLayout_3.setContentsMargins(5, 5, 5, 5)
+        self.horizontalLayout_3.setSpacing(0)
+        self.horizontalLayout_3.setObjectName("horizontalLayout_3")
+        self.splitter = QtWidgets.QSplitter(ChatSocket)
+        sizePolicy = QtWidgets.QSizePolicy(QtWidgets.QSizePolicy.Preferred, QtWidgets.QSizePolicy.Preferred)
+        sizePolicy.setHorizontalStretch(0)
+        sizePolicy.setVerticalStretch(0)
+        sizePolicy.setHeightForWidth(self.splitter.sizePolicy().hasHeightForWidth())
+        self.splitter.setSizePolicy(sizePolicy)
+        self.splitter.setOrientation(QtCore.Qt.Horizontal)
+        self.splitter.setOpaqueResize(True)
+        self.splitter.setHandleWidth(3)
+        self.splitter.setChildrenCollapsible(False)
+        self.splitter.setObjectName("splitter")
+        self.horizontalLayoutWidget = QtWidgets.QWidget(self.splitter)
+        self.horizontalLayoutWidget.setObjectName("horizontalLayoutWidget")
+        self.verticalLayout_3 = QtWidgets.QVBoxLayout(self.horizontalLayoutWidget)
+        self.verticalLayout_3.setContentsMargins(0, 0, 0, 0)
+        self.verticalLayout_3.setSpacing(2)
+        self.verticalLayout_3.setObjectName("verticalLayout_3")
+        self.btnAddFriend = QtWidgets.QPushButton(self.horizontalLayoutWidget)
+        self.btnAddFriend.setObjectName("btnAddFriend")
+        self.verticalLayout_3.addWidget(self.btnAddFriend)
+        self.listWidget = QtWidgets.QListWidget(self.horizontalLayoutWidget)
+        font = QtGui.QFont()
+        font.setPointSize(14)
+        self.listWidget.setFont(font)
+        self.listWidget.setGridSize(QtCore.QSize(0, 30))
+        self.listWidget.setObjectName("listWidget")
+        self.verticalLayout_3.addWidget(self.listWidget)
+        self.verticalLayoutWidget = QtWidgets.QWidget(self.splitter)
+        self.verticalLayoutWidget.setObjectName("verticalLayoutWidget")
+        self.verticalLayout_2 = QtWidgets.QVBoxLayout(self.verticalLayoutWidget)
+        self.verticalLayout_2.setSizeConstraint(QtWidgets.QLayout.SetDefaultConstraint)
+        self.verticalLayout_2.setContentsMargins(0, 0, 0, 0)
+        self.verticalLayout_2.setObjectName("verticalLayout_2")
+        self.stackedWidget = QtWidgets.QStackedWidget(self.verticalLayoutWidget)
+        self.stackedWidget.setObjectName("stackedWidget")
+        self.p0 = QtWidgets.QWidget()
+        self.p0.setObjectName("p0")
+        self.stackedWidget.addWidget(self.p0)
+        self.p1 = QtWidgets.QWidget()
+        self.p1.setObjectName("p1")
+        self.stackedWidget.addWidget(self.p1)
+        self.verticalLayout_2.addWidget(self.stackedWidget)
+        self.horizontalLayout_4 = QtWidgets.QHBoxLayout()
+        self.horizontalLayout_4.setObjectName("horizontalLayout_4")
+        self.btnChangeId = QtWidgets.QPushButton(self.verticalLayoutWidget)
+        sizePolicy = QtWidgets.QSizePolicy(QtWidgets.QSizePolicy.Minimum, QtWidgets.QSizePolicy.Minimum)
+        sizePolicy.setHorizontalStretch(0)
+        sizePolicy.setVerticalStretch(0)
+        sizePolicy.setHeightForWidth(self.btnChangeId.sizePolicy().hasHeightForWidth())
+        self.btnChangeId.setSizePolicy(sizePolicy)
+        self.btnChangeId.setObjectName("btnChangeId")
+        self.horizontalLayout_4.addWidget(self.btnChangeId)
+        spacerItem = QtWidgets.QSpacerItem(40, 20, QtWidgets.QSizePolicy.Expanding, QtWidgets.QSizePolicy.Minimum)
+        self.horizontalLayout_4.addItem(spacerItem)
+        self.btnSend = QtWidgets.QPushButton(self.verticalLayoutWidget)
+        sizePolicy = QtWidgets.QSizePolicy(QtWidgets.QSizePolicy.Minimum, QtWidgets.QSizePolicy.Minimum)
+        sizePolicy.setHorizontalStretch(0)
+        sizePolicy.setVerticalStretch(0)
+        sizePolicy.setHeightForWidth(self.btnSend.sizePolicy().hasHeightForWidth())
+        self.btnSend.setSizePolicy(sizePolicy)
+        self.btnSend.setObjectName("btnSend")
+        self.horizontalLayout_4.addWidget(self.btnSend)
+        self.verticalLayout_2.addLayout(self.horizontalLayout_4)
+        self.verticalLayout_2.setStretch(0, 9)
+        self.horizontalLayout_3.addWidget(self.splitter)
+
+        self.retranslateUi(ChatSocket)
+        self.listWidget.setCurrentRow(-1)
+        self.stackedWidget.setCurrentIndex(0)
+        QtCore.QMetaObject.connectSlotsByName(ChatSocket)
+
+    def retranslateUi(self, ChatSocket):
+        _translate = QtCore.QCoreApplication.translate
+        self.btnAddFriend.setText(_translate("ChatSocket", "添加好友"))
+        self.btnChangeId.setText(_translate("ChatSocket", "切换账号"))
+        self.btnSend.setText(_translate("ChatSocket", "发送"))
